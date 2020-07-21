@@ -5,21 +5,21 @@
         text-decoration: none;
         text-transform: uppercase;
         display: inline-block;
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
         font-size: 2rem;
         outline: none;
-    }
-
-    &--primary {
         color: $color-white;
-        height: 100%;
+        cursor: pointer;
         background: none;
         border: none;
         letter-spacing: 2px;
         font-weight: 300;
         position: relative;
-        cursor: pointer;
         transition: .5s;
+    }
+
+    &--primary {
+        height: 100%;
 
         &::after,
         &::before {
@@ -67,5 +67,38 @@
                 transition-delay: .7s;
             }
         }
+    }
+
+    &--secondary {
+        width: fit-content;
+        align-self: center;
+        z-index: 10;
+
+        &::before {
+            content: '';
+	        position: absolute;	
+	        transition: .5s;
+            top: 0;
+	        width: 0;
+	        height: 100%;
+        }
+
+        &::before {
+            right: 0;
+	        border: 1px solid $color-primary;
+	        border-left: 0;
+            border-right: 0;
+        }
+
+        &:hover {
+            transform: translateX(1rem) scale(1.2);
+
+            &::before {
+                transition-delay: 0s;
+                width: 100%;
+            }
+        }
+        
+
     }
 }

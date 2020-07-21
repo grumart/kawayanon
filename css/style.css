@@ -40,6 +40,13 @@ body {
     font-weight: 300;
     margin: 0 auto; }
 
+.heading-secondary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 2px; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -75,20 +82,20 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   font-size: 2rem;
-  outline: none; }
-
-.btn--primary {
+  outline: none;
   color: #fff;
-  height: 100%;
+  cursor: pointer;
   background: none;
   border: none;
   letter-spacing: 2px;
   font-weight: 300;
   position: relative;
-  cursor: pointer;
   transition: .5s; }
+
+.btn--primary {
+  height: 100%; }
   .btn--primary::after, .btn--primary::before {
     content: "";
     position: absolute;
@@ -121,6 +128,28 @@ body {
       height: 100%;
       transition-delay: .7s; }
 
+.btn--secondary {
+  width: fit-content;
+  align-self: center;
+  z-index: 10; }
+  .btn--secondary::before {
+    content: '';
+    position: absolute;
+    transition: .5s;
+    top: 0;
+    width: 0;
+    height: 100%; }
+  .btn--secondary::before {
+    right: 0;
+    border: 1px solid #ffa931;
+    border-left: 0;
+    border-right: 0; }
+  .btn--secondary:hover {
+    transform: translateX(1rem) scale(1.2); }
+    .btn--secondary:hover::before {
+      transition-delay: 0s;
+      width: 100%; }
+
 .hero {
   height: 100vh;
   margin: 0;
@@ -133,4 +162,38 @@ body {
     text-align: center; }
 
 .about {
-  height: 100vh; }
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(185, 172, 146, 0.3), rgba(185, 172, 146, 0.3)), url(../img/bamboo-1.jpg);
+  display: flex;
+  justify-content: space-between; }
+
+.kawayanon,
+.payag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5rem solid rgba(255, 169, 49, 0.5);
+  margin: 8rem;
+  padding: 10rem 0;
+  text-align: center;
+  background-color: rgba(255, 169, 49, 0.6);
+  transition: all .3s; }
+  .kawayanon__heading span,
+  .payag__heading span {
+    font-weight: 400;
+    display: block;
+    font-size: 4.5rem; }
+  .kawayanon__text-box,
+  .payag__text-box {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 2;
+    text-align: justify; }
+  .kawayanon:hover,
+  .payag:hover {
+    transform: translateY(-0.5rem); }
