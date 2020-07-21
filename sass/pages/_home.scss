@@ -1,0 +1,13 @@
+.hero {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text-box {
+        z-index: 2;
+        animation: heading 3s;
+        text-align: center;
+    }
+}
