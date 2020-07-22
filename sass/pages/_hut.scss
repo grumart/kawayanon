@@ -1,14 +1,14 @@
 .hut {
-        height: 100vh;
-        width: 100%;
-        overflow: auto;
-        background: url(../img/hut-2.jpg);
-        background-position: left;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background: url(../img/hut-2.jpg);
+    background-position: left;
 
-        @media (max-width: 1000px) {
-            background-position: center;
-        }
+    @media (max-width: 1000px) {
+        background-position: center;
     }
+}
 
 .sidebar {
     position: absolute;

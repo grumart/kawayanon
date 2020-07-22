@@ -158,7 +158,7 @@ body {
       transition-delay: 0s;
       width: 100%; }
 
-.btn--terciary {
+.btn--terciary, .btn--terciary:link, .btn--terciary:visited {
   padding: 0;
   color: #2F4F4F;
   font-size: 1.6rem;
@@ -166,10 +166,10 @@ body {
   letter-spacing: 1px;
   text-align: left;
   font-weight: 400; }
-  .btn--terciary span {
+  .btn--terciary span, .btn--terciary:link span, .btn--terciary:visited span {
     display: block;
     margin-bottom: .5rem; }
-    .btn--terciary span:first-child {
+    .btn--terciary span:first-child, .btn--terciary:link span:first-child, .btn--terciary:visited span:first-child {
       text-transform: uppercase; }
 
 .hero {
@@ -182,6 +182,13 @@ body {
     z-index: 2;
     animation: heading 3s;
     text-align: center; }
+
+.bamboo {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background: url(../img/bamboo-1.jpg);
+  background-position: center; }
 
 .about {
   height: 100vh;

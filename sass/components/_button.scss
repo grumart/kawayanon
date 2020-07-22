@@ -106,7 +106,9 @@
         }
     }
 
-    &--terciary {
+    &--terciary,
+    &--terciary:link,
+    &--terciary:visited {
         padding: 0;
         color: $color-grey--darkslate;
         font-size: $default-font-size;
