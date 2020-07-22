@@ -10,6 +10,7 @@
     
     @media (max-width: 1000px) {
         flex-direction: column;
+        justify-content: initial;
     }
 }
 
@@ -25,9 +26,10 @@
     background: rgba($color-white, .6);
     transition: all .3s;
 
-    @media (max-width: 1000px) {
-        margin: .5rem auto;
+    @media (max-width: $bp-large) {
+        margin: .7rem auto;
         background: rgba($color-white, .8);
+        justify-content: space-around;
         padding: 0;
         width: 90%;
     }

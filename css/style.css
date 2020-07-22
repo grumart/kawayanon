@@ -15,6 +15,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -191,7 +194,8 @@ body {
   justify-content: space-around; }
   @media (max-width: 1000px) {
     .about {
-      flex-direction: column; } }
+      flex-direction: column;
+      justify-content: initial; } }
 
 .kawayanon,
 .payag {
@@ -204,11 +208,12 @@ body {
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
   transition: all .3s; }
-  @media (max-width: 1000px) {
+  @media (max-width: 68.75em) {
     .kawayanon,
     .payag {
-      margin: .5rem auto;
+      margin: .7rem auto;
       background: rgba(255, 255, 255, 0.8);
+      justify-content: space-around;
       padding: 0;
       width: 90%; } }
   .kawayanon__heading span,
