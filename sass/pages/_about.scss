@@ -43,6 +43,7 @@
     &__text-box {
         width: 70%;
         margin: 0 auto;
+        margin-bottom: 2rem;
         font-size: 1.8rem;
         color: $color-grey--darkslate;
         font-weight: 300;
@@ -53,6 +54,10 @@
     &:hover {
         transform: translateY(-.5rem);
         background: rgba($color-white, .85);
+    }
+
+    &__btn {
+        margin: 2rem 0;
     }
 }
 
