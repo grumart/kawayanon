@@ -15,6 +15,7 @@
         font-weight: 300;
         position: relative;
         transition: .5s;
+        font-family: "Lato", sans-serif;
     }
 
     &--primary {
@@ -74,6 +75,7 @@
         align-self: center;
         z-index: 10;
         color: $color-grey--darkslate;
+        transition: all .2;
 
         &::before {
             content: '';
@@ -86,20 +88,40 @@
 
         &::before {
             right: 0;
-	        border: 1px solid $color-grey--darkslate;
+	        border: 1px solid $color-primary;
 	        border-left: 0;
             border-right: 0;
         }
 
         &:hover {
-            transform: translateX(1rem) scale(1.2);
+            font-weight: 400;
+            transform: scale(1.2);
+            color: $color-primary;
+            
 
             &::before {
                 transition-delay: 0s;
                 width: 100%;
             }
         }
-        
+    }
 
+    &--terciary {
+        padding: 0;
+        color: $color-grey--darkslate;
+        font-size: $default-font-size;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        text-align: left;
+        font-weight: 400;
+
+        span {
+            display: block;
+            margin-bottom: .5rem;
+
+            &:first-child {
+                text-transform: uppercase;
+            }
+        }
     }
 }
