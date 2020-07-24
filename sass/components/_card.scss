@@ -12,26 +12,25 @@
 
     @media (max-width: $bp-medium) {
         height: 30rem !important;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     @media (max-width: $bp-small) {
-        height: 35rem !important;
+        height: 45rem !important;
     }
 }
 
 .cardXL {
 
-    @media (max-width: $bp-medium) {
-        flex-direction: column;
-    }
-
     &__text-box {
         width: 50%;
+
     }
 
     &__img-box {
         width: 50%;
-        background-image: url(../../img/bamboo-1.jpg);
+        background-image: url(../img/bamboo-1.jpg);
         background-size: cover;
 
         @media (max-width: $bp-medium) {
@@ -45,18 +44,28 @@
 
     &__text-box {
         width: 50%;
+
+        @media (max-width: $bp-medium) {
+            width: 100%;
+            height: 70%;
+        }
     }
 
     &__img-box {
         width: 50%;
 
+        @media (max-width: $bp-medium) {
+            width: 100%;
+            height: 30%;
+        }
+
         &--1 {
-            background-image: url(../../img/bamboo-1.jpg);
+            background-image: url(../img/bamboo-1.jpg);
             background-size: cover;
         }
 
         &--2 {
-            background-image: url(../../img/bamboo-1.jpg);
+            background-image: url(../img/bamboo-1.jpg);
             background-size: cover;
         }
     }
@@ -70,17 +79,17 @@
         height: 30%;
         
         &--1 {
-            background-image: url(../../img/bamboo-1.jpg);
+            background-image: url(../img/bamboo-1.jpg);
             background-size: cover;
         }
 
         &--2 {
-            background-image: url(../../img/bamboo-1.jpg);
+            background-image: url(../img/bamboo-1.jpg);
             background-size: cover;
         }
 
         &--3 {
-            background-image: url(../../img/bamboo-1.jpg);
+            background-image: url(../img/bamboo-1.jpg);
             background-size: cover;
         }
     }
@@ -92,7 +101,7 @@
 }
 
 .cardS {
-    background: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)), url(../../img/bamboo-1.jpg);
+    background: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)), url(../img/bamboo-1.jpg);
     background-size: cover;
     
 
