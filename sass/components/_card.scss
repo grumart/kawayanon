@@ -21,7 +21,7 @@
     }
 
     @media (max-width: $bp-small) {
-        max-height: 60rem !important;
+        max-height: 80rem !important;
     }
 
     &:first-child {
@@ -127,6 +127,10 @@
     &__text-box {
         width: 100%;
         height: 70%;
+
+        @media (max-width: $bp-large) {
+            height: 100%;
+        }
     }
 }
 

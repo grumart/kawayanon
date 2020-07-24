@@ -218,7 +218,7 @@ body {
       justify-content: space-between; } }
   @media (max-width: 37.5em) {
     .card {
-      max-height: 60rem !important; } }
+      max-height: 80rem !important; } }
   @media (max-width: 68.75em) {
     .card:first-child {
       min-height: 60rem !important; } }
@@ -289,6 +289,9 @@ body {
   .cardM__text-box {
     width: 100%;
     height: 70%; }
+    @media (max-width: 68.75em) {
+      .cardM__text-box {
+        height: 100%; } }
 
 .cardS {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/bamboo-1.jpg);
@@ -383,7 +386,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-  margin: 8rem 4rem;
+  height: 90%;
+  margin: 5rem 4rem;
   padding: 7rem 0;
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
