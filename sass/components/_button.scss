@@ -126,4 +126,18 @@
             }
         }
     }
+
+    &--card,
+    &--card:visited,
+    &--card:link {
+        color: $color-primary;
+        display: block;
+        text-align: center;
+        font-weight: 400;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
 }

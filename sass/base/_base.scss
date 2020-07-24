@@ -17,3 +17,18 @@ html {
 body {
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+    margin: 0 .25rem;
+
+    &-thumb {
+        background: $color-primary; 
+        border-radius: 10px;
+
+        &:hover {
+            background: $color-primary--light-1;
+        }
+    }
+
+  }

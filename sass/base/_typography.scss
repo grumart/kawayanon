@@ -34,3 +34,20 @@ body {
     color: $color-grey--dark;
     letter-spacing: 2px;
 }
+
+.heading-terciary {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    text-align: justify;
+    padding: .5rem 1rem;
+    overflow: auto;
+
+    // @media (max-width: $bp-medium) {
+    //     overflow: hidden;
+    // }
+}

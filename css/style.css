@@ -22,6 +22,15 @@ html {
 body {
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 1rem;
+  margin: 0 .25rem; }
+  ::-webkit-scrollbar-thumb {
+    background: #ffa931;
+    border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #fecb89; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -49,6 +58,17 @@ body {
   font-weight: 300;
   color: #696969;
   letter-spacing: 2px; }
+
+.heading-terciary {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  text-align: justify;
+  padding: .5rem 1rem;
+  overflow: auto; }
 
 .u-center-text {
   text-align: center !important; }
@@ -172,8 +192,32 @@ body {
     .btn--terciary span:first-child, .btn--terciary:link span:first-child, .btn--terciary:visited span:first-child {
       text-transform: uppercase; }
 
+.btn--card, .btn--card:visited, .btn--card:link {
+  color: #ffa931;
+  display: block;
+  text-align: center;
+  font-weight: 400; }
+  .btn--card:hover, .btn--card:visited:hover, .btn--card:link:hover {
+    transform: scale(1.1); }
+
 .card {
-  display: flex; }
+  display: flex;
+  border: 1px solid #696969; }
+  .card__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: 30rem !important; } }
+  @media (max-width: 37.5em) {
+    .card {
+      height: 35rem !important; } }
+
+@media (max-width: 56.25em) {
+  .cardXL {
+    flex-direction: column; } }
 
 .cardXL__text-box {
   width: 50%; }
@@ -182,6 +226,13 @@ body {
   width: 50%;
   background-image: url(../../img/bamboo-1.jpg);
   background-size: cover; }
+  @media (max-width: 56.25em) {
+    .cardXL__img-box {
+      width: 100%;
+      height: 50%; } }
+
+.cardL__text-box {
+  width: 50%; }
 
 .cardL__img-box {
   width: 50%; }
@@ -210,51 +261,43 @@ body {
     width: 100%;
     height: 70%; }
 
-.cardS__text-box {
-  align-self: center;
-  margin: 0 auto; }
+.cardS {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../img/bamboo-1.jpg);
+  background-size: cover; }
+  .cardS__text-box {
+    width: 100%; }
 
 .card {
   width: 100%;
   height: 100%; }
   .card--1 {
-    background-color: orchid;
     grid-row: 1 / span 2;
     grid-column: 4 / span 2; }
   .card--2 {
-    background-color: pink;
     grid-row: 1 / 2;
     grid-column: 1 / 2; }
   .card--3 {
-    background-color: gainsboro;
     grid-row: 1 / 2;
     grid-column: 2 / 3; }
   .card--4 {
-    background-color: goldenrod;
     grid-row: 1 / 2;
     grid-column: 3 / 4; }
   .card--5 {
-    background-color: peru;
     grid-row: 2 / 3;
     grid-column: 1 / span 2; }
   .card--6 {
-    background-color: powderblue;
     grid-row: 3 / 4;
     grid-column: 3 / span 2; }
   .card--7 {
-    background-color: thistle;
     grid-row: 3 / 4;
     grid-column: 1 / 2; }
   .card--8 {
-    background-color: teal;
     grid-row: 3 / 4;
     grid-column: 2 / 3; }
   .card--9 {
-    background-color: tan;
     grid-row: 2 / 3;
     grid-column: 3 / 4; }
   .card--10 {
-    background-color: gold;
     grid-row: 3 / 4;
     grid-column: 5 / 6; }
 
