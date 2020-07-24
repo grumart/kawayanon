@@ -215,7 +215,7 @@ body {
       justify-content: space-between; } }
   @media (max-width: 37.5em) {
     .card {
-      height: 45rem !important; } }
+      height: 60rem !important; } }
 
 .cardXL__text-box {
   width: 50%; }
@@ -325,6 +325,7 @@ body {
   background-position: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
   grid-gap: 1.5rem;
   padding: 1.5rem; }
   @media (max-width: 56.25em) {
