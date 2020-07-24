@@ -1,4 +1,4 @@
-// import img1 from "../img/bamboo.jpg";
+
 
 const articles = [
     {

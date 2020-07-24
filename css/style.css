@@ -210,15 +210,18 @@ body {
     margin: 0 auto; }
   @media (max-width: 56.25em) {
     .card {
-      height: 30rem !important;
+      min-height: 30rem !important;
       flex-direction: column;
       justify-content: space-between; } }
   @media (max-width: 37.5em) {
     .card {
-      height: 60rem !important; } }
+      max-height: 60rem !important; } }
 
 .cardXL__text-box {
   width: 50%; }
+  @media (max-width: 56.25em) {
+    .cardXL__text-box {
+      width: 100%; } }
 
 .cardXL__img-box {
   width: 50%;
@@ -332,7 +335,7 @@ body {
     .bamboo {
       display: flex;
       flex-direction: column;
-      padding: 2rem 10rem; } }
+      padding: 2rem 5rem; } }
   @media (max-width: 37.5em) {
     .bamboo {
       padding: 2rem; } }

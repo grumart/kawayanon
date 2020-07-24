@@ -11,13 +11,13 @@
     }
 
     @media (max-width: $bp-medium) {
-        height: 30rem !important;
+        min-height: 30rem !important;
         flex-direction: column;
         justify-content: space-between;
     }
 
     @media (max-width: $bp-small) {
-        height: 60rem !important;
+        max-height: 60rem !important;
     }
 }
 
@@ -26,6 +26,9 @@
     &__text-box {
         width: 50%;
 
+        @media (max-width: $bp-medium) {
+            width: 100%;
+        }
     }
 
     &__img-box {
