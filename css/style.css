@@ -172,6 +172,92 @@ body {
     .btn--terciary span:first-child, .btn--terciary:link span:first-child, .btn--terciary:visited span:first-child {
       text-transform: uppercase; }
 
+.card {
+  display: flex; }
+
+.cardXL__text-box {
+  width: 50%; }
+
+.cardXL__img-box {
+  width: 50%;
+  background-image: url(../../img/bamboo-1.jpg);
+  background-size: cover; }
+
+.cardL__img-box {
+  width: 50%; }
+  .cardL__img-box--1 {
+    background-image: url(../../img/bamboo-1.jpg);
+    background-size: cover; }
+  .cardL__img-box--2 {
+    background-image: url(../../img/bamboo-1.jpg);
+    background-size: cover; }
+
+.cardM {
+  flex-direction: column; }
+  .cardM__img-box {
+    width: 100%;
+    height: 30%; }
+    .cardM__img-box--1 {
+      background-image: url(../../img/bamboo-1.jpg);
+      background-size: cover; }
+    .cardM__img-box--2 {
+      background-image: url(../../img/bamboo-1.jpg);
+      background-size: cover; }
+    .cardM__img-box--3 {
+      background-image: url(../../img/bamboo-1.jpg);
+      background-size: cover; }
+  .cardM__text-box {
+    width: 100%;
+    height: 70%; }
+
+.cardS__text-box {
+  align-self: center;
+  margin: 0 auto; }
+
+.card {
+  width: 100%;
+  height: 100%; }
+  .card--1 {
+    background-color: orchid;
+    grid-row: 1 / span 2;
+    grid-column: 4 / span 2; }
+  .card--2 {
+    background-color: pink;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; }
+  .card--3 {
+    background-color: gainsboro;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; }
+  .card--4 {
+    background-color: goldenrod;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4; }
+  .card--5 {
+    background-color: peru;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 2; }
+  .card--6 {
+    background-color: powderblue;
+    grid-row: 3 / 4;
+    grid-column: 3 / span 2; }
+  .card--7 {
+    background-color: thistle;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; }
+  .card--8 {
+    background-color: teal;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3; }
+  .card--9 {
+    background-color: tan;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4; }
+  .card--10 {
+    background-color: gold;
+    grid-row: 3 / 4;
+    grid-column: 5 / 6; }
+
 .hero {
   height: 100vh;
   margin: 0;
@@ -187,14 +273,19 @@ body {
   height: 100vh;
   width: 100%;
   overflow: auto;
-  background: url(../img/bamboo-1.jpg);
-  background-position: center; }
-
-.test {
-  width: 200px;
-  height: 100px;
-  background-color: orange;
-  padding: 20px; }
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+  padding: 1.5rem; }
+  @media (max-width: 56.25em) {
+    .bamboo {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 10rem; } }
+  @media (max-width: 37.5em) {
+    .bamboo {
+      padding: 2rem; } }
 
 .about {
   height: 100vh;
