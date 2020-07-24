@@ -208,6 +208,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto; }
+  @media (max-width: 68.75em) {
+    .card {
+      min-height: 35rem !important; } }
   @media (max-width: 56.25em) {
     .card {
       min-height: 35rem !important;
@@ -216,7 +219,7 @@ body {
   @media (max-width: 37.5em) {
     .card {
       max-height: 60rem !important; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 68.75em) {
     .card:first-child {
       min-height: 60rem !important; } }
 
@@ -224,7 +227,7 @@ body {
   flex-direction: row; }
   .cardXL__text-box {
     width: 50%; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 68.75em) {
       .cardXL__text-box {
         width: 75%; } }
   .cardXL__img-box {
@@ -232,7 +235,7 @@ body {
     background-image: url(../img/article-1.jpg);
     background-size: cover;
     background-position-x: center; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 68.75em) {
       .cardXL__img-box {
         width: 25%; } }
 
@@ -244,7 +247,8 @@ body {
       height: 70%; } }
 
 .cardL__img-box {
-  width: 50%; }
+  width: 50%;
+  height: 100%; }
   @media (max-width: 56.25em) {
     .cardL__img-box {
       width: 100%;
@@ -258,9 +262,18 @@ body {
 
 .cardM {
   flex-direction: column; }
+  @media (max-width: 68.75em) {
+    .cardM {
+      flex-direction: row; } }
+  @media (max-width: 37.5em) {
+    .cardM {
+      flex-direction: column; } }
   .cardM__img-box {
     width: 100%;
     height: 40%; }
+    @media (max-width: 68.75em) {
+      .cardM__img-box {
+        height: 100%; } }
     .cardM__img-box--1 {
       background-image: url(../img/article-5.jpg);
       background-size: cover;
@@ -335,17 +348,20 @@ body {
   background-position: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 1.5rem;
   padding: 1.5rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 68.75em) {
     .bamboo {
       display: flex;
       flex-direction: column;
-      padding: 2rem 5rem; } }
-  @media (max-width: 37.5em) {
+      padding: 2rem 10rem; } }
+  @media (max-width: 56.25em) {
     .bamboo {
       padding: 2rem; } }
+  @media (max-width: 37.5em) {
+    .bamboo {
+      padding: 1rem; } }
 
 .about {
   height: 100vh;
