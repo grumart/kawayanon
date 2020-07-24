@@ -37,7 +37,7 @@ body {
 
 .heading-terciary {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -46,8 +46,4 @@ body {
     text-align: justify;
     padding: .5rem 1rem;
     overflow: auto;
-
-    // @media (max-width: $bp-medium) {
-    //     overflow: hidden;
-    // }
 }

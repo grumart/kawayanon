@@ -23,7 +23,7 @@ body {
   box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: .5rem;
   margin: 0 .25rem; }
   ::-webkit-scrollbar-thumb {
     background: #ffa931;
@@ -61,7 +61,7 @@ body {
 
 .heading-terciary {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 .paragraph {
@@ -202,7 +202,7 @@ body {
 
 .card {
   display: flex;
-  border: 1px solid #696969; }
+  border: 1px solid #fecb89; }
   .card__text-box {
     display: flex;
     flex-direction: column;
@@ -210,27 +210,31 @@ body {
     margin: 0 auto; }
   @media (max-width: 56.25em) {
     .card {
-      min-height: 30rem !important;
+      min-height: 35rem !important;
       flex-direction: column;
       justify-content: space-between; } }
   @media (max-width: 37.5em) {
     .card {
       max-height: 60rem !important; } }
-
-.cardXL__text-box {
-  width: 50%; }
   @media (max-width: 56.25em) {
-    .cardXL__text-box {
-      width: 100%; } }
+    .card:first-child {
+      min-height: 60rem !important; } }
 
-.cardXL__img-box {
-  width: 50%;
-  background-image: url(../img/bamboo-1.jpg);
-  background-size: cover; }
-  @media (max-width: 56.25em) {
-    .cardXL__img-box {
-      width: 100%;
-      height: 50%; } }
+.cardXL {
+  flex-direction: row; }
+  .cardXL__text-box {
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .cardXL__text-box {
+        width: 75%; } }
+  .cardXL__img-box {
+    width: 50%;
+    background-image: url(../img/article-1.jpg);
+    background-size: cover;
+    background-position-x: center; }
+    @media (max-width: 56.25em) {
+      .cardXL__img-box {
+        width: 25%; } }
 
 .cardL__text-box {
   width: 50%; }
@@ -246,26 +250,29 @@ body {
       width: 100%;
       height: 30%; } }
   .cardL__img-box--1 {
-    background-image: url(../img/bamboo-1.jpg);
+    background-image: url(../img/article-2.jpg);
     background-size: cover; }
   .cardL__img-box--2 {
-    background-image: url(../img/bamboo-1.jpg);
+    background-image: url(../img/article-3.jpg);
     background-size: cover; }
 
 .cardM {
   flex-direction: column; }
   .cardM__img-box {
     width: 100%;
-    height: 30%; }
+    height: 40%; }
     .cardM__img-box--1 {
-      background-image: url(../img/bamboo-1.jpg);
-      background-size: cover; }
+      background-image: url(../img/article-5.jpg);
+      background-size: cover;
+      background-position-y: bottom; }
     .cardM__img-box--2 {
-      background-image: url(../img/bamboo-1.jpg);
-      background-size: cover; }
+      background-image: url(../img/article-6.jpg);
+      background-size: cover;
+      background-position-y: 12%; }
     .cardM__img-box--3 {
-      background-image: url(../img/bamboo-1.jpg);
-      background-size: cover; }
+      background-image: url(../img/article-4.jpg);
+      background-size: cover;
+      background-position-y: 60%; }
   .cardM__text-box {
     width: 100%;
     height: 70%; }
