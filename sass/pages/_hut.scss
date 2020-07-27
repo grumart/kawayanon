@@ -7,8 +7,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $bp-large) {
         background-position: center;
+        height: 100%;
     }
 }
 
@@ -20,14 +21,15 @@
     padding: 2rem;
     background-color: rgba($color-white, .8);
     font-size: $default-font-size;
-    overflow: auto;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $bp-large) {
         width: 100vw;
-        background-color: rgba($color-white, .87);
+        height: 100%;
+        background-color: rgba($color-white, .85);
     }
 }
 
