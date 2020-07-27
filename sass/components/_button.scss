@@ -132,11 +132,11 @@
     &--card:link {
         color: $color-primary;
         display: block;
-        text-align: center;
+        padding-left: 0;
         font-weight: 400;
 
         &:hover {
-            transform: scale(1.1);
+            transform: translateX(1rem);
         }
     }
 

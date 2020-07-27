@@ -195,10 +195,10 @@ body {
 .btn--card, .btn--card:visited, .btn--card:link {
   color: #ffa931;
   display: block;
-  text-align: center;
+  padding-left: 0;
   font-weight: 400; }
   .btn--card:hover, .btn--card:visited:hover, .btn--card:link:hover {
-    transform: scale(1.1); }
+    transform: translateX(1rem); }
 
 .card {
   justify-self: center;
@@ -209,6 +209,7 @@ body {
   position: relative;
   display: flex;
   align-items: flex-end;
+  justify-items: flex-start;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: .4s ease-out; }
   .card:hover {
@@ -247,9 +248,10 @@ body {
     transform: translateY(30px);
     transition: 0.5s; }
   .card__title {
-    color: white; }
+    font-size: 1.6rem;
+    text-transform: uppercase; }
   .card__description {
-    color: white; }
+    font-size: 1.6rem; }
 
 .hero {
   height: 100vh;

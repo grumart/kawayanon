@@ -8,6 +8,7 @@
     position: relative;
     display: flex;
     align-items: flex-end;
+    justify-items: flex-start;
     box-shadow: 0px 7px 10px rgba(black, 0.5);
     transition: .4s ease-out;
 
@@ -60,10 +61,11 @@
     }
 
     &__title {
-        color: white;
+        font-size: $default-font-size;
+        text-transform: uppercase;
     }
 
     &__description {
-        color: white;
+        font-size: $default-font-size;
     }
 }
