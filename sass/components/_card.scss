@@ -1,145 +1,69 @@
 .card {
+    justify-self: center;
+
+    width: 28rem;
+    height: 36rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    position: relative;
     display: flex;
-    border: 1px solid $color-primary--light-1;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+    transition: .4s ease-out;
 
-    &__text-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 auto;
-        
-    }
+    &:hover {
+        transform: translateY(20px);
 
-    @media (max-width: $bp-large) {
-        min-height: 35rem !important;
-    }
-
-    @media (max-width: $bp-medium) {
-        min-height: 35rem !important;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    @media (max-width: $bp-small) {
-        max-height: 80rem !important;
-    }
-
-    &:first-child {
-        @media (max-width: $bp-large) {
-            min-height: 60rem !important;  
+        &::before {
+            opacity: 1
         }
-    }
-}
 
-.cardXL {
-    flex-direction: row;
-
-    &__text-box {
-        width: 50%;
-
-        @media (max-width: $bp-large) {
-            width: 75%;
+        .card__info {
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
 
-    &__img-box {
-        width: 50%;
-        background-image: url(../img/article-1.jpg);
-        background-size: cover;
-        background-position-x: center;
-
-        @media (max-width: $bp-large) {
-            width: 25%;
-        }
-    }
-}
-
-.cardL {
-
-    &__text-box {
-        width: 50%;
-
-        @media (max-width: $bp-medium) {
-            width: 100%;
-            height: 70%;
-        }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		background: rgba(black, 0.6);
+		z-index: 2;
+		transition: 0.5s;
+        opacity: 0;
     }
 
-    &__img-box {
-        width: 50%;
-        height: 100%;
 
-        @media (max-width: $bp-medium) {
-            width: 100%;
-            height: 30%;
-        }
-
-        &--1 {
-            background-image: url(../img/article-2.jpg);
-            background-size: cover;
-        }
-
-        &--2 {
-            background-image: url(../img/article-3.jpg);
-            background-size: cover;
-        }
-    }
-}
-
-.cardM {
-    flex-direction: column;
-
-    @media (max-width: $bp-large) {
-        flex-direction: row;
-    }
-
-    @media (max-width: $bp-small) {
-        flex-direction: column;
-    }
-
-    &__img-box {
+    &__img {
         width: 100%;
-        height: 40%;
-
-        @media (max-width: $bp-large) {
-            height: 100%;
-        }
-        
-        &--1 {
-            background-image: url(../img/article-5.jpg);
-            background-size: cover;
-            background-position-y: bottom;
-        }
-
-        &--2 {
-            background-image: url(../img/article-6.jpg);
-            background-size: cover;
-            background-position-y: 12%;
-        }
-
-        &--3 {
-            background-image: url(../img/article-4.jpg);
-            background-size: cover;
-            background-position-y: 60%;
-        }
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 15px;
     }
 
-    &__text-box {
-        width: 100%;
-        height: 70%;
-
-        @media (max-width: $bp-large) {
-            height: 100%;
-        }
+    &__info {
+        position: relative;
+		z-index: 3;
+		color: white;
+		opacity: 0;
+		transform: translateY(30px);
+        transition: 0.5s;
     }
-}
 
-.cardS {
-    background: linear-gradient(rgba($color-white, .8), rgba($color-white, .8)), url(../img/bamboo-1.jpg);
-    background-size: cover;
-    
+    &__title {
+        color: white;
+    }
 
-    &__text-box {
-       width: 100%; 
+    &__description {
+        color: white;
     }
 }
