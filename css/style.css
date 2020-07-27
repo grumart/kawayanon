@@ -401,22 +401,21 @@ body {
   height: 100vh;
   width: 100%;
   overflow: auto;
-  background: url(../img/hut-2.jpg);
+  background-image: url(../img/hut-2.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat; }
   @media (max-width: 68.75em) {
     .hut {
-      background-position: center;
-      height: 100%; } }
+      background-position: center; } }
 
 .sidebar {
   position: absolute;
   right: 0;
-  width: 30vw;
+  width: 35vw;
   height: 100vh;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   font-size: 1.6rem;
   overflow: scroll;
   display: flex;
@@ -424,9 +423,7 @@ body {
   justify-content: space-between; }
   @media (max-width: 68.75em) {
     .sidebar {
-      width: 100vw;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.85); } }
+      width: 100vw; } }
 
 .list {
   list-style: none;
