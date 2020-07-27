@@ -5,10 +5,12 @@
     overflow: auto;
     background-position: top;
     background-image: url(../img/boat-1.jpg);
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
     
     @media (max-width: 1000px) {
+        display: flex;
         flex-direction: column;
         justify-content: initial;
     }
@@ -18,33 +20,33 @@
 .payag {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 93%;
     height: 90%;
-    margin: 5rem 4rem;
-    padding: 7rem 0;
+    padding: 3rem 0;
+    box-shadow: 0 .7rem 4rem rgba($color-black, 0.4);
     text-align: center;
-    background: rgba($color-white, .6);
+    background: rgba($color-white, .8);
     transition: all .3s;
 
     @media (max-width: $bp-large) {
         margin: .7rem auto;
-        background: rgba($color-white, .8);
+        background: rgba($color-white, .89);
+        border-radius: 2rem;
         justify-content: space-around;
         padding: 0;
         width: 90%;
     }
 
     &__heading span {
-        font-weight: 300;
+        font-weight: 400;
         display: block;
-        font-size: 5.5rem;
+        font-size: 3rem;
     }
 
     &__text-box {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-        margin-bottom: 2rem;
         font-size: 1.8rem;
         color: $color-grey--darkslate;
         font-weight: 300;
@@ -53,13 +55,18 @@
     }
 
     &:hover {
-        transform: translateY(-.5rem);
-        background: rgba($color-white, .85);
+        transform: translateX(.7rem);
+        background: rgba($color-white, .95);
     }
+}
 
-    &__btn {
-        margin: 2rem 0;
-    }
+.kawayanon {
+    grid-column: 4/5;
+}
+
+.payag {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 

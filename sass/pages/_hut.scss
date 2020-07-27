@@ -3,7 +3,7 @@
     width: 100%;
     overflow: auto;
     background: url(../img/hut-2.jpg);
-    background-position: left;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -14,7 +14,7 @@
 
 .sidebar {
     position: absolute;
-    left: 0;
+    right: 0;
     width: 30vw;
     height: 100vh;
     padding: 2rem;
@@ -27,7 +27,7 @@
 
     @media (max-width: 1000px) {
         width: 100vw;
-        background-color: rgba($color-white, .7);
+        background-color: rgba($color-white, .87);
     }
 }
 
