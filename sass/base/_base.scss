@@ -30,4 +30,9 @@ body {
             background: $color-primary--light-1;
         }
     }
-  }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
