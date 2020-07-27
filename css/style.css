@@ -266,7 +266,7 @@ body {
   height: 100vh;
   width: 100%;
   padding: 5rem;
-  background-color: #ffa931;
+  background: linear-gradient(#fecb89, #ffa931);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;

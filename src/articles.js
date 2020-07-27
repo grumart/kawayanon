@@ -79,7 +79,6 @@ const cards = [card0, card1, card2, card3, card4, card5, card6, card7, card8, ca
 function combine (cardId, id) {
     const cardTitle = cardId.querySelector("h3").innerText = articles[id].title;
     const cardDescription = cardId.querySelector("p").innerText = articles[id].description;
-    // const popup = document.getElementById("popup");
     const btnCard = document.getElementById(id);
 
     btnCard.addEventListener("click", () => {
@@ -94,7 +93,7 @@ function combine (cardId, id) {
             popup.style.opacity = "0";
             popup.style.visibility = "hidden";
         });
-        
+
         btnClose.addEventListener("click", () => {
             popup.style.opacity = "0";
             popup.style.visibility = "hidden";
