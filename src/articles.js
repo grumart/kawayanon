@@ -79,23 +79,46 @@ const cards = [card0, card1, card2, card3, card4, card5, card6, card7, card8, ca
 function combine (cardId, id) {
     const cardTitle = cardId.querySelector("h3").innerText = articles[id].title;
     const cardDescription = cardId.querySelector("p").innerText = articles[id].description;
+    // const popup = document.getElementById("popup");
+    const btnCard = document.getElementById(id);
+
+    btnCard.addEventListener("click", () => {
+        popup.style.opacity = "1";
+        popup.style.visibility = "initial";
+
+        const popupTitle = popup.querySelector("h3").innerText = articles[btnCard.id].title;
+        const popupText = popup.querySelector("p").innerText = articles[btnCard.id].body;
+
+        const btnClose = document.getElementById("btn-close");
+        popup.addEventListener("click", () => {
+            popup.style.opacity = "0";
+            popup.style.visibility = "hidden";
+        });
+        
+        btnClose.addEventListener("click", () => {
+            popup.style.opacity = "0";
+            popup.style.visibility = "hidden";
+        });
+
+        
+    })
 }
 
 for (let i = 0; i < articles.length; i++) {
     combine(cards[i], i);
 }
 
-// const test = document.getElementById("test");
-// const popup = document.getElementById("popup");
-// const testBtn = test.querySelector("button");
 
-// testBtn.addEventListener("click", () => {
-//     console.log(testBtn.id);
+// const popup = document.getElementById("popup");
+// const cardBtn = document.querySelector("button");
+
+// cardBtn.addEventListener("click", () => {
+//     console.log(cardBtn.id);
 //     popup.style.opacity = "1";
 //     popup.style.visibility = "initial";
 
-//     const popupTitle = popup.querySelector("h3").innerText = articles[testBtn.id].title;
-//     const popupContent = popup.querySelector("p").innerText = articles[testBtn.id].body;
+//     const popupTitle = popup.querySelector("h3").innerText = articles[cardBtn.id].title;
+//     const popupText = popup.querySelector("p").innerText = articles[cardBtn.id].body;
 
 //     const closeBtn = popup.querySelector("button");
 
