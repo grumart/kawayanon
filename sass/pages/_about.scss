@@ -31,7 +31,7 @@
 
     @media (max-width: $bp-large) {
         margin: .7rem auto;
-        background: rgba($color-white, .89);
+        background: rgba($color-white, .95);
         border-radius: 2rem;
         justify-content: space-around;
         padding: 0;
@@ -56,7 +56,7 @@
 
     &:hover {
         transform: translateX(.7rem);
-        background: rgba($color-white, .95);
+        background: rgba($color-white, .1);
     }
 }
 

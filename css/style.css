@@ -315,7 +315,8 @@ body {
     text-align: center; }
 
 .bamboo {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   width: 100%;
   padding: 5rem;
   background-image: linear-gradient(to right bottom, rgba(255, 169, 49, 0.6), rgba(255, 169, 49, 0.6)), url(../img/bamboo-1.jpg);
@@ -366,7 +367,7 @@ body {
     .kawayanon,
     .payag {
       margin: .7rem auto;
-      background: rgba(255, 255, 255, 0.89);
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 2rem;
       justify-content: space-around;
       padding: 0;
@@ -388,7 +389,7 @@ body {
   .kawayanon:hover,
   .payag:hover {
     transform: translateX(0.7rem);
-    background: rgba(255, 255, 255, 0.95); }
+    background: rgba(255, 255, 255, 0.1); }
 
 .kawayanon {
   grid-column: 4/5; }
