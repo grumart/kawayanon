@@ -3,14 +3,9 @@
     width: 100%;
     overflow: auto;
     background-image: url(../img/hut-2.jpg);
-    background-position: right;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    @media (max-width: $bp-large) {
-        background-position: center;
-        // height: 100%;
-    }
 }
 
 .sidebar {
@@ -26,7 +21,19 @@
     flex-direction: column;
     justify-content: space-between;
 
+    // @media (min-width: $bp-large) {
+    //     width: 30vh;
+    // }
+
     @media (max-width: $bp-large) {
+        width: 40vw;
+    }
+
+    @media (max-width: $bp-medium) {
+        width: 80vw;
+    }
+
+    @media (max-width: $bp-small) {
         width: 100vw;
     }
 }
@@ -108,7 +115,7 @@
     justify-items: self-end;
     align-items: flex-start;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $bp-small) {
         flex-direction: column;
         justify-content: center;
     }
