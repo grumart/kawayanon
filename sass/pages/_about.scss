@@ -4,7 +4,7 @@
     background-size: cover;
     overflow: auto;
     background-position: top;
-    background-image: url(../img/boat-1.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary--light-1, 0.8)), url(../img/boat-1.jpg);
     display: grid;
     grid-template-columns: repeat(4, 25%);
     justify-items: center;

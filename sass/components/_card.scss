@@ -38,7 +38,8 @@
 		transition: 0.5s;
         opacity: 0;
 
-        @media (hover: none) {
+        @media (hover: none),
+        (width: $bp-small) {
             opacity: 1;
         }
     }
@@ -63,7 +64,8 @@
 		transform: translateY(30px);
         transition: 0.5s;
 
-        @media (hover: none) {
+        @media (hover: none),
+        (width: $bp-small) {
             opacity: 1;
             transform: translateY(0px);
         }
