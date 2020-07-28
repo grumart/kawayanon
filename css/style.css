@@ -314,7 +314,7 @@ body {
     animation: heading 3s;
     text-align: center; }
 
-.bamboo {
+.articles {
   min-height: 100vh;
   max-height: 100%;
   width: 100%;
@@ -328,11 +328,11 @@ body {
   justify-content: center;
   align-content: center; }
   @media (max-width: 80em) {
-    .bamboo {
+    .articles {
       height: 100%;
       padding: 4rem; } }
   @media (max-width: 37.5em) {
-    .bamboo {
+    .articles {
       padding: 3rem 0; } }
 
 .about {
@@ -389,7 +389,7 @@ body {
   .kawayanon:hover,
   .payag:hover {
     transform: translateX(0.7rem);
-    background: rgba(255, 255, 255, 0.1); }
+    background: white; }
 
 .kawayanon {
   grid-column: 4/5; }

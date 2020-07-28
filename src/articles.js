@@ -107,22 +107,3 @@ for (let i = 0; i < articles.length; i++) {
     combine(cards[i], i);
 }
 
-
-// const popup = document.getElementById("popup");
-// const cardBtn = document.querySelector("button");
-
-// cardBtn.addEventListener("click", () => {
-//     console.log(cardBtn.id);
-//     popup.style.opacity = "1";
-//     popup.style.visibility = "initial";
-
-//     const popupTitle = popup.querySelector("h3").innerText = articles[cardBtn.id].title;
-//     const popupText = popup.querySelector("p").innerText = articles[cardBtn.id].body;
-
-//     const closeBtn = popup.querySelector("button");
-
-//     closeBtn.addEventListener("click", () => {
-//         popup.style.opacity = "0";
-//         popup.style.visibility = "hidden";
-//     })
-// })
