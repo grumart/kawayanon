@@ -15,11 +15,6 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
-
-        // @include respond(tab-port) {
-        //     top: 4rem;
-        //     right: 4rem;
-        // }
     }
 
     &__background {
@@ -33,10 +28,6 @@
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        // @include respond(tab-port) {
-        //     top: 4.5rem;
-        //     right: 4.5rem;
-        // }
     }
 
     &__nav {
@@ -45,7 +36,9 @@
         top: 0;
         left: 0;
         z-index: 1001;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         opacity: 0;
         visibility: hidden;
         width: 0;
@@ -54,7 +47,6 @@
 
     &__list {
         width: 100%;
-        @include centerXY;
         list-style: none;
         text-align: center;   
     }
@@ -66,6 +58,7 @@
     &__link {
         &:link,
         &:visited {
+            
             display: inline-block;
             font-size: 3rem;
             font-weight: 300;
