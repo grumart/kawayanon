@@ -350,7 +350,8 @@ body {
   text-align: center; }
 
 .navigation__item {
-  margin: 1rem; }
+  margin: 1rem;
+  align-self: center; }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
