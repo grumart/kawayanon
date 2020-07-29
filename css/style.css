@@ -119,11 +119,10 @@ body {
   font-size: 2rem;
   outline: none;
   cursor: pointer;
-  background: none;
   letter-spacing: 2px;
   font-weight: 400;
   position: relative;
-  transition: .5s;
+  transition: all .5s;
   font-family: "Lato", sans-serif; }
 
 .btn--primary {
@@ -165,40 +164,21 @@ body {
       transition-delay: .7s; }
 
 .btn--secondary {
-  width: fit-content;
-  align-self: center;
-  z-index: 10;
-  color: #ffa931;
-  transition: all .2 ease; }
-  @media (max-width: 68.75em) {
-    .btn--secondary {
-      border-top: 1px solid #ffa931;
-      border-bottom: 1px solid #ffa931; } }
-  @media (max-width: 37.5em) {
-    .btn--secondary {
-      margin: 3rem 0;
-      font-weight: 900 !important; } }
-  .btn--secondary::before {
-    content: '';
-    position: absolute;
-    transition: .5s;
-    top: 0;
-    width: 0;
-    height: 100%; }
-  .btn--secondary::before {
-    right: 0;
-    border: 1px solid #ffa931;
-    border-left: 0;
-    border-right: 0; }
+  width: 100%;
+  height: 100%;
+  background-color: #ffa931;
+  color: #fff;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all .2s; }
   .btn--secondary:hover {
-    font-weight: 700;
-    color: #ffa931; }
-    .btn--secondary:hover::before {
-      transition-delay: 0s;
-      width: 100%; }
+    transform: translateY(-0.5rem);
+    font-weight: 700; }
+  .btn--secondary:active {
+    transform: translateY(0.2rem); }
 
 .btn--terciary, .btn--terciary:link, .btn--terciary:visited {
   padding: 0;
+  background: none;
   color: #2F4F4F;
   font-size: 1.6rem;
   text-transform: lowercase;
@@ -213,6 +193,7 @@ body {
 
 .btn--card, .btn--card:visited, .btn--card:link {
   color: #ffa931;
+  background: none;
   display: block;
   padding-left: 0;
   font-weight: 400;
