@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     overflow: auto;
-    background-image: url(../img/hut-2.jpg);
+    background-image: url(../img/hut-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +30,8 @@
     }
 
     @media (max-width: $bp-small) {
-        width: 100vw;
+        width: 100%;
+        padding: 0 2rem;
     }
 }
 
@@ -96,7 +97,7 @@
     }
 }
 
-.booking {
+.book-now {
     align-self: center;
     justify-self: center;
 }

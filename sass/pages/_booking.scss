@@ -1,0 +1,24 @@
+.booking {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/hut-1.jpg);
+    background-size: cover;
+    background-position: right-bottom;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    padding: 5rem;
+    height: max-content;
+    display: flex;
+    background-color: $color-white;
+    @include box-shadow;
+
+    @media (max-width: $bp-small) {
+        padding: 2rem;
+    }
+}
