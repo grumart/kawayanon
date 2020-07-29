@@ -80,13 +80,11 @@
         transition: all .2s;
 
         &:hover {
-            transform: translateY(-.5rem);
-            @include box-shadow;
-            font-weight: 700;
+            transform: translateY(-.6rem);
         }
 
         &:active {
-            transform: translateY(.2rem);
+            transform: translateY(-.2rem);
         }
     }
 
