@@ -77,11 +77,11 @@
         height: 100%;
         background-color: $color-primary;
         color: $color-white;
-        @include box-shadow;
         transition: all .2s;
 
         &:hover {
             transform: translateY(-.5rem);
+            @include box-shadow;
             font-weight: 700;
         }
 

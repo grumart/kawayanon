@@ -21,10 +21,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-    // @media (min-width: $bp-large) {
-    //     width: 30vh;
-    // }
-
     @media (max-width: $bp-large) {
         width: 40vw;
     }
@@ -48,10 +44,6 @@
 
     &__list{
         flex-wrap: wrap;
-
-        @media (max-width: 1000px) {
-            flex-direction: column;
-        }
     }
 
     &__item {
@@ -107,40 +99,4 @@
 .booking {
     align-self: center;
     justify-self: center;
-}
-
-// .contact {
-//     display: flex;
-//     justify-content: space-around;
-//     justify-items: self-end;
-//     align-items: flex-start;
-
-//     @media (max-width: $bp-small) {
-//         flex-direction: column;
-//         justify-content: center;
-//     }
-
-//     &__location,
-//     &__mail {
-//         display: flex;
-//         justify-items: flex-start;
-//         align-items: flex-start;
-//         margin: 2rem 0;
-//         transition: all .3s;
-
-//         &:hover {
-//             transform: translateY(-3px);
-//         }
-//     }
-
-//     &__icon {
-//         width: 2.5rem;
-//         height: 2.5rem;
-//         fill: $color-primary;
-//         margin-right: 1.5rem;
-//     }
-// }
-
-.paragraph {
-    text-align: justify;
 }
