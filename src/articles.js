@@ -1,5 +1,3 @@
-
-
 const articles = [
     {
         id: "0",
