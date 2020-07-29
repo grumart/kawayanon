@@ -233,7 +233,10 @@ body {
     z-index: 2;
     transition: 0.5s;
     opacity: 0; }
-    @media (hover: none), (width: 37.5em) {
+    @media (hover: none) {
+      .card::before {
+        opacity: 1; } }
+    @media (max-width: 37.5em) {
       .card::before {
         opacity: 1; } }
   .card__img {
@@ -252,7 +255,11 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s; }
-    @media (hover: none), (width: 37.5em) {
+    @media (hover: none) {
+      .card__info {
+        opacity: 1;
+        transform: translateY(0px); } }
+    @media (max-width: 37.5em) {
       .card__info {
         opacity: 1;
         transform: translateY(0px); } }
