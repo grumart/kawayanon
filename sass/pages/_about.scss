@@ -5,23 +5,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
-
-    @media (max-width: $bp-small){
-        height: 100%;
-    }
-    
+    overflow: scroll;    
 }
 
 .container {
     width: 80%;
     height: max-content;
     display: flex;
+    align-items: space-between;
     background-color: $color-white;
     @include box-shadow;
 
-    @media (min-width: $bp-largest) {
-        width: 70%;
+    @media (min-width: $bp-large) {
+        max-height: 90%;
     }
 
     @media (max-width: $bp-medium) {
@@ -30,6 +26,8 @@
 
     @media (max-width: $bp-small) {
         width: 90%;
+        height: 95% !important;
+        
     }
 
     &__img-box {
@@ -48,6 +46,7 @@
         width: 60%;
         padding: 2rem;
         text-align: justify;
+        overflow: auto;
 
         @media (max-width: $bp-medium) {
             width: 100%;

@@ -536,25 +536,24 @@ body {
   justify-content: center;
   align-items: center;
   overflow: scroll; }
-  @media (max-width: 37.5em) {
-    .about {
-      height: 100%; } }
 
 .container {
   width: 80%;
   height: max-content;
   display: flex;
+  align-items: space-between;
   background-color: #fff;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
-  @media (min-width: 80em) {
+  @media (min-width: 68.75em) {
     .container {
-      width: 70%; } }
+      max-height: 90%; } }
   @media (max-width: 56.25em) {
     .container {
       flex-direction: column; } }
   @media (max-width: 37.5em) {
     .container {
-      width: 90%; } }
+      width: 90%;
+      height: 95% !important; } }
   .container__img-box {
     width: 40%;
     background-image: url(../img/bamboo-1.jpg);
@@ -566,7 +565,8 @@ body {
   .container__text-box {
     width: 60%;
     padding: 2rem;
-    text-align: justify; }
+    text-align: justify;
+    overflow: auto; }
     @media (max-width: 56.25em) {
       .container__text-box {
         width: 100%; } }
