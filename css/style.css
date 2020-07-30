@@ -276,14 +276,19 @@ body {
       justify-content: flex-start; }
     .form__group:last-child {
       justify-content: flex-end; }
+    .form__group--radio {
+      display: flex;
+      justify-content: space-around !important;
+      margin: 4rem 0; }
   .form__input {
     font-size: 1.6rem;
     font-family: inherit;
     padding: 1rem 0;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.5);
+    color: #696969;
     border: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid #c7c7c7;
     width: 50%;
     display: block;
     transition: all .3s; }
@@ -305,8 +310,8 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateX(-4rem); }
-  .form__radio-group:not(:last-child) {
-    margin-right: 2rem; }
+  .form__radio-group {
+    justify-content: space-between; }
   .form__radio-input {
     display: none; }
   .form__radio-label {
@@ -567,24 +572,24 @@ body {
   .container__text {
     font-size: 1.6rem; }
 
-.contact {
+.info {
   display: flex;
   justify-content: space-between;
   justify-items: self-end;
   align-items: flex-start;
   margin: 2rem auto; }
   @media (max-width: 37.5em) {
-    .contact {
+    .info {
       flex-direction: column; } }
-  .contact__box {
+  .info__box {
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
     margin: 2rem 0;
     transition: all .3s; }
-    .contact__box:hover {
+    .info__box:hover {
       transform: translateY(-3px); }
-  .contact__icon {
+  .info__icon {
     width: 2.5rem;
     height: 2.5rem;
     fill: #ffa931;
@@ -624,6 +629,49 @@ body {
     .book {
       padding: 2rem; } }
 
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #fecb89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll; }
+
+.contact-box {
+  width: 30%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 56.25em) {
+    .contact-box {
+      width: 60%; } }
+  @media (max-width: 37.5em) {
+    .contact-box {
+      width: 90%; } }
+  .contact-box__img {
+    width: 100%;
+    height: 25rem;
+    background-image: url(../img/hut-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; }
+  .contact-box__content {
+    padding: 2rem; }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  color: #696969; }
+  .contact-info > :not(:last-child) {
+    margin-bottom: 2rem; }
+  .contact-info__phone span {
+    display: block; }
+
 .hero {
   height: 100vh;
   margin: 0;
@@ -638,7 +686,6 @@ body {
 .hut {
   height: 100vh;
   width: 100%;
-  overflow: auto;
   background-image: url(../img/hut-3.jpg);
   background-position: center;
   background-size: cover;
