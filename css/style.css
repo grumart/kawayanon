@@ -512,9 +512,7 @@ body {
   max-height: 100%;
   width: 100%;
   padding: 5rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 169, 49, 0.6), rgba(255, 169, 49, 0.6)), url(../img/bamboo-1.jpg);
-  background-size: cover;
-  background-position: top;
+  background-color: #ffa931;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
