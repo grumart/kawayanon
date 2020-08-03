@@ -1,7 +1,9 @@
-# kawayanon - bamboo getaway
+# KAWAYANAN - bamboo getaway
 ## off grid hut rentals website 
 
 https://grumart.github.io/kawayanan/
+
+|HTML5, CSS: Sass, vanilla JavaScript|
 
 <hr>
 A little about and welcome page
